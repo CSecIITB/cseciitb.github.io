@@ -1,12 +1,25 @@
-/* .demo{
-    background: #252c44;
-} */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .our-team{
     text-align: center;
+    max-width: 416px;
 }
+
 .our-team .team_img{
     position: relative;
     overflow: hidden;
+    height: 256px; /* Set the maximum height for the image */
+}
+
+.our-team .team_img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center; /* Crop the image from the top */
 }
 .our-team .team_img:after{
     content: "";
@@ -32,7 +45,7 @@
     position: absolute;
     top: -100%;
     right: 10px;
-    background: #f76c5e;
+    background: #f56a6a;
     border-radius: 0 0 20px 20px;
     z-index: 1;
     transition: all 0.3s ease 0s;
@@ -90,7 +103,7 @@
 .our-team .post{
     display: inline-block;
     font-size: 15px;
-    color:  #f76c5e;
+    color:  #f56a6a;
     text-transform: capitalize;
 }
 .our-team .post:before{
