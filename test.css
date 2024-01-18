@@ -1,5 +1,17 @@
 .container {
+    width: 100%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered_row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -7,6 +19,9 @@
 .our-team{
     text-align: center;
     max-width: 416px;
+    height: auto;
+    margin: 20px;
+    color: white;
 }
 
 .our-team .team_img{
